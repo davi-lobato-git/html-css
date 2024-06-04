@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <hr>
+    <p>Mudança de imagem conforme a largura da tela. Usando a tag &lt;picture&gt;, a tag &lt;img&gt; e a tag &lt;source&gt; com o parâmetro <code>media type</code>. </p>
+    <picture>
+        <source media="(max-width: 730px)" srcset="imagens/teste-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px )" srcset="imagens/teste-m.jpg" type="image/jpg">
+        <img src="imagens/teste-g.jpg" alt="Imagem Flexível">
+    </picture>
+    
+    <h1>Áudio</h1>
+    <hr>
+    <p>Utilizando a tag &lt;audio&gt; com os parâmetros <code>preload</code> (carrega apenas o necessário), <code>controls</code> (exibe o reprodutor de mídia) e <code>loop</code> (repete o áudio).</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/bell-sfx.ogg" type="audio/ogg">
+    </audio>
+
+</body>
+</html>
