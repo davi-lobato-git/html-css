@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    min-height: 100%;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+header > h1{
+    font-size: 7vh;
+    padding-bottom: 10px;
+}
+
+header > p{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+
+    font-size: 3vh;
+}
+
+section p{
+    padding-bottom: 20px;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    box-shadow: inset 5px 5px 13px 0px rgba(0, 0, 0, 0.482);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.466);
+    padding: 15px;
+    display: inline-block;
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+#primeiro{
+    background-image: url(../images/background001.jpg);
+    background-position: right center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+#segundo{
+    background-image: url(../images/background002.jpg);
+    background-position: right center;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 10px;
+}
