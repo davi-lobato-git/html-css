@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 02</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            padding: 15px;
+            font-size: 1.5em;
+        }
+
+        caption, thead, tfoot{
+            background-color: rgb(84, 84, 84);
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        td, th{
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Criando Tabelas 02</h1>
+    <!--
+        Estruturas Anatômicas de Tabela
+
+        caption
+        thead
+        tbody
+        tfoot
+    -->
+    <table>
+        <caption>População por Estados</caption>
+        
+        <thead>
+            <tr>
+                <th scope="col" style="width: 10px;">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="2">Total de Habitantes</th>
+                <td class="num"><strong>117 473 451</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
